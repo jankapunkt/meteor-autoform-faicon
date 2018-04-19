@@ -1,0 +1,24 @@
+.af-faicon-container {
+	height: 300px;
+	overflow-y: scroll;
+}
+
+.af-faicon-entry {
+	height: 6em;
+	margin: 0.1em;
+	vertical-align: middle;
+	cursor: pointer;
+}
+
+.af-faicon-entry:hover {
+	background-color : #D4D4D4;
+}
+
+.af-faicon-entry-active {
+	background-color : #FFA039;
+}
+
+
+.af-faicon-with-border {
+	border: solid 1px;
+}

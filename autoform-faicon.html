@@ -1,0 +1,35 @@
+<template name="afFaicon">
+
+	{{#if loadComplete}}
+		<div class="panel panel-default">
+			<div class="panel-heading clearfix">
+				<div class="form-inline pull-right">
+					<div class="input-group">
+						<span class="input-group-addon"><i class="fa fa-filter"></i></span>
+						<input type="text" class="form-control input-sm" id="afFaIcon-filter">
+					</div>
+				</div>
+				<span>{{dataSchemaKey}}</span>
+				{{#if selected}}
+					<span>(<i class="fa fa-fw fa-{{selected}}"></i> {{selected}})</span>
+				{{/if}}
+			</div>
+			<div class="panel-body af-faicon-container">
+				{{#each entries}}
+					<div class="col-xs-1 text-center af-faicon-entry af-faicon-with-border {{#if (isSelected this)}}
+							af-faicon-entry-active{{/if}}"
+						 data-icon="{{this}}">
+						<span><i class="fa fa-fw fa-2x fa-{{this}}"></i></span><br>
+						<span class="text-muted">{{this}}</span>
+					</div>
+				{{/each}}
+			</div>
+		</div>
+	{{else}}
+		<div><i class="fa fa-fw fa-spinner fa-pulse"></i> Loading</div>
+	{{/if}}
+	<input type="hidden" id="afFaicon-selectedIcon"
+		   data-schema-key="{{dataSchemaKey}}"
+		   value="{{selected}}" />
+
+</template>
