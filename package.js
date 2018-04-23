@@ -3,7 +3,7 @@ Package.describe({
 	summary: 'Font awesome select',
 	description: 'Select fontawesome icons in your autoform',
 	version: '0.0.2',
-	git: ''
+	git: 'https://github.com/jankapunkt/meteor-autoform-faicon.git'
 });
 
 Package.onUse(function (api) {
@@ -15,8 +15,8 @@ Package.onUse(function (api) {
 		'underscore',
 		'http',
 		'reactive-var',
-		'templating',
-		'fortawesome:fontawesome',
+		'templating@1.3.2',
+		'fortawesome:fontawesome@4.7.0',
 		'aldeed:autoform@6.2.0',
 		'aldeed:template-extension@4.0.0'
 	]);
