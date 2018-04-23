@@ -2,7 +2,7 @@ Package.describe({
 	name: 'jkuester:autoform-faicon',
 	summary: 'Font awesome select',
 	description: 'Select fontawesome icons in your autoform',
-	version: '0.0.1',
+	version: '0.0.2',
 	git: ''
 });
 
