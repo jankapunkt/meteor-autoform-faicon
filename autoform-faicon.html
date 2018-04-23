@@ -16,12 +16,12 @@
 			</div>
 			<div class="panel-body af-faicon-container">
 				{{#each entries}}
-					<div class="col-xs-1 text-center af-faicon-entry af-faicon-with-border {{#if (isSelected this)}}
-							af-faicon-entry-active{{/if}}"
-						 data-icon="{{this}}">
-						<span><i class="fa fa-fw fa-2x fa-{{this}}"></i></span><br>
-						<span class="text-muted">{{this}}</span>
-					</div>
+						<button class="col-xs-1 text-center btn btn-lg af-faicon-entry {{#if (isSelected this)}}
+							btn-primary{{else}}btn-default{{/if}}" data-icon="{{this}}">
+							<i class="fa fa-fw fa-2x fa-{{this}}"></i><br>
+							<div class="af-faicon-text text-center">{{this}}</div>
+						</button>
+
 				{{/each}}
 			</div>
 		</div>

@@ -6,8 +6,6 @@
 .af-faicon-entry {
 	height: 6em;
 	margin: 0.1em;
-	vertical-align: middle;
-	cursor: pointer;
 }
 
 .af-faicon-entry:hover {
@@ -18,6 +16,9 @@
 	background-color : #FFA039;
 }
 
+.af-faicon-text {
+	font-size: 0.7em;
+}
 
 .af-faicon-with-border {
 	border: solid 1px;
